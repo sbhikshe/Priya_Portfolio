@@ -3,7 +3,7 @@
     --headerfooter-bgcolor: rgb(4, 48, 48);
 }
 * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: auto;
 }
 
@@ -18,11 +18,14 @@ header h1 {
     background-color: var(--headerfooter-bgcolor);
     color: var(--headerfooter-textcolor);
     padding: 10px;
+
+    font-size: 200%;
 }
 
 footer h3 {
     background-color: var(--headerfooter-bgcolor);
     color: var(--headerfooter-textcolor);
+    font-size: 150%;
 }
 
 header nav,
@@ -40,6 +43,7 @@ footer nav {
 header nav a,
 footer nav a {
     color: var(--headerfooter-textcolor);
+    font-variant: small-caps;
 }
 
 main {
@@ -55,14 +59,16 @@ main {
 
 .Topic {
     display:grid;
+    grid-template-columns: 20% 10% 65%;
+    padding: 1%;
     /*border: 2px yellow solid;*/
-    grid-template-columns: 25% 10% 60%;
+
 }    
 
 article .Caption {
     /*border: 2px black solid;*/
-    /*flex: 200px;*/ /* basis */
-
+    font-size: 200%;
+    font-weight:bolder;
 }
 
 article .Divider {
@@ -73,12 +79,11 @@ article .Divider {
     border-bottom: 2px black solid;
     border-right: 2px black solid;
     */
-
-   /* flex: 10px;*/ /* basis */
 }
 article .TopicContent {
-    /*border: 2px black solid;*/
-    /*flex: 500px; *//* basis */
+    /* border: 2px black solid; */
+    font-size: medium;
+    line-height: 150%;
 }
 
 #WorkProjects {
@@ -107,7 +112,6 @@ article .TopicContent {
     border: 5px yellowgreen solid;   
 }
 
-
 /*
 #HoriseonProject img {
     width: 100%;
@@ -128,12 +132,11 @@ article .TopicContent {
 }
 */
 
-
-
 #ResumeBrief {
 }
 #ResumeBrief ul li{
-    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    line-height: 150%;
     list-style-type: circle;
 }
 
