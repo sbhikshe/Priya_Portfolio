@@ -4,16 +4,24 @@
 }
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: auto;
     box-sizing: border-box;
+    margin: auto;
 }
 
-header {
+header,
+footer {
     background-color: var(--headerfooter-bgcolor);
     color: var(--headerfooter-textcolor);
+    padding: 10px;
 }
 
 header h1 {
+    background-color: var(--headerfooter-bgcolor);
+    color: var(--headerfooter-textcolor);
+    padding: 10px;
+}
+
+footer h3 {
     background-color: var(--headerfooter-bgcolor);
     color: var(--headerfooter-textcolor);
 }
@@ -21,6 +29,9 @@ header h1 {
 header nav,
 footer nav {
     background-color: var(--headerfooter-bgcolor);
+    padding: 10px;
+
+    font-size: 125%;
 
     display: flex;
     flex-direction: row;
@@ -31,28 +42,6 @@ header nav a,
 footer nav a {
     color: var(--headerfooter-textcolor);
 }
-
-footer {
-    background-color: var(--headerfooter-bgcolor);
-    color: var(--headerfooter-textcolor);
-}
-footer h3 {
-    background-color: var(--headerfooter-bgcolor);
-    color: var(--headerfooter-textcolor);
-}
-
-/*
-footer nav {
-    background-color: var(--headerfooter-bgcolor);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-footer nav a {
-    color: var(--headerfooter-textcolor);
-}
-*/
 
 main {
     background-color: rgb(112, 208, 237);
@@ -65,26 +54,16 @@ main {
 }
 
 article {
-    position: relative;
 }
 
 article .Caption {
-    margin-left: 10px;
+    left: 10px;
+    /* border: 2px black solid; */
 }
 
 article .TopicContent {
-    position: relative;
-    top: -20px;
-    left: 100px;
-    /* display: flex; */
+    /* border: 2px black solid; */
 }
-
-/*
-#SomethingAboutMe {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-*/
 
 #WorkProjects {
     display: flex;
@@ -92,6 +71,7 @@ article .TopicContent {
     justify-content: center;
 
 }
+
 #HoriseonProject img,
 #MusicSchoolProject img,
 #ComingSoonProject img{
@@ -110,12 +90,11 @@ article .TopicContent {
     header nav,
     footer nav {
         flex-direction: column;
-        /*justify-items:flex-end; */
         align-items: center;
     }
 
     #WorkProjects{
         flex-direction: column;
-        justify-items: auto;
+        align-items: center;
     }
 }
