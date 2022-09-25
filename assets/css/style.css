@@ -1,0 +1,121 @@
+:root {
+    --headerfooter-textcolor:  ivory;
+    --headerfooter-bgcolor: rgb(4, 48, 48);
+}
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--headerfooter-bgcolor);
+    color: var(--headerfooter-textcolor);
+}
+
+header h1 {
+    background-color: var(--headerfooter-bgcolor);
+    color: var(--headerfooter-textcolor);
+}
+
+header nav,
+footer nav {
+    background-color: var(--headerfooter-bgcolor);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+header nav a,
+footer nav a {
+    color: var(--headerfooter-textcolor);
+}
+
+footer {
+    background-color: var(--headerfooter-bgcolor);
+    color: var(--headerfooter-textcolor);
+}
+footer h3 {
+    background-color: var(--headerfooter-bgcolor);
+    color: var(--headerfooter-textcolor);
+}
+
+/*
+footer nav {
+    background-color: var(--headerfooter-bgcolor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer nav a {
+    color: var(--headerfooter-textcolor);
+}
+*/
+
+main {
+    background-color: rgb(112, 208, 237);
+    padding: 10px;
+}
+
+#NamePic {
+    width: 100px;
+    border: 2px solid blanchedalmond;
+}
+
+article {
+    position: relative;
+}
+
+article .Caption {
+    margin-left: 10px;
+}
+
+article .TopicContent {
+    position: relative;
+    top: -20px;
+    left: 100px;
+    /* display: flex; */
+}
+
+/*
+#SomethingAboutMe {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+*/
+
+#WorkProjects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+#HoriseonProject img,
+#MusicSchoolProject img,
+#ComingSoonProject img{
+    width: 150px;
+    border: 2px black solid;
+}
+#ResumeBrief {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#ResumeBrief ul li{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width:768px) {
+    header nav,
+    footer nav {
+        flex-direction: column;
+        /*justify-items:flex-end; */
+        align-items: center;
+    }
+
+    #WorkProjects{
+        flex-direction: column;
+        justify-items: auto;
+    }
+}
