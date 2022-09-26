@@ -1,8 +1,8 @@
 :root {
     --headerfooter-textcolor:  ivory;
     --headerfooter-bgcolor: rgb(4, 48, 48);rgb(135, 212, 235);
-    --main-bg-color1: rgb(58, 194, 235);
-    --main-bg-color2: rgb(152, 217, 236);
+    --main-bg-color1: rgb(12, 193, 213);
+    --main-bg-color2: rgb(152, 236, 236);
 }
 * {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -49,9 +49,13 @@ footer nav a {
 
 main {
     background-image: linear-gradient(var(--main-bg-color1), var(--main-bg-color2));
-    padding: 10px;
 }
 
+#NamePicSection {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../images/blue_bg.jpeg);
+}
 #NamePic {
     width: 100px;
     border: 2px solid blanchedalmond;
