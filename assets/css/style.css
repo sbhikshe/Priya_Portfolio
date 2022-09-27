@@ -1,3 +1,4 @@
+/* CSS variables to set colors */
 :root {
     --headerfooter-textcolor:  ivory;
     --headerfooter-bgcolor: rgb(4, 48, 48);rgb(135, 212, 235);
@@ -29,6 +30,7 @@ footer h3 {
     font-size: 150%;
 }
 
+/* Nav in header and footer uses flex layout */
 header nav,
 footer nav {
     background-color: var(--headerfooter-bgcolor);
@@ -47,10 +49,12 @@ footer nav a {
     font-variant: small-caps;
 }
 
+/* Linear color gradient for background in body */
 main {
     background-image: linear-gradient(var(--main-bg-color1), var(--main-bg-color2));
 }
 
+/* Section below header containing picture and background img */
 #NamePicSection {
     margin: 0px;
     padding: 0px;
@@ -62,16 +66,17 @@ main {
     margin: 1%;
 }
 
+/* Each article (named Topic) element contains a caption, 
+the yellow line, and content laid out horizontally. */
+/* Uses a grid layout with 3 columns for caption, the line, and 
+the content. */
 .Topic {
     display: grid;
     grid-template-columns: 20% 10% 65%;
     padding: 1%;
-    /*border: 2px yellow solid;*/
-
 }    
 
 article .Caption {
-    /*border: 2px black solid;*/
     font-size: 200%;
     font-weight:bolder;
 }
@@ -79,17 +84,18 @@ article .Caption {
 article .Divider {
     height: 100%;
     border-left: 5px yellow solid;
-    /*
-    border-top: 2px black solid;
-    border-bottom: 2px black solid;
-    border-right: 2px black solid;
-    */
 }
 article .TopicContent {
-    /* border: 2px black solid; */
     font-size: medium;
     line-height: 150%;
 }
+
+/* The Work projects use a grid layout for the images
+that link to the project. */
+/* For now, 3 projects placed appropriately on the grid.
+The first item occupies the first two rows. The 2nd and 3rd
+items occupy the third row on the grid. */
+
 #WorkProjects {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -108,11 +114,14 @@ article .TopicContent {
     grid-column: 2 / 3;
     grid-row-end: 3 / 4;
 }
+
+/* Pseudo class to pop up the project image when
+the user hovers over it */
 .WorkProjectItem:hover {
     transform: scale(104%);
 }
 
-/* Flex implementation */
+/* Flex implementation - not used */
 /*
 #WorkProjects {
     display: flex;
@@ -145,6 +154,7 @@ article .TopicContent {
     list-style-type: circle;
 }
 
+/* To make the page responsive to changes in the screen size */
 @media screen and (max-width:768px) {
     header nav,
     footer nav {

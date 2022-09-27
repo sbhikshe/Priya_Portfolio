@@ -35,7 +35,8 @@ This is my personal Portfolio developed using HTML and CSS. The page uses Flex a
 ## Credits
 [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)\
 [Flexbox - Mozilla](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox#horizontal_and_vertical_alignment)\
-[Basic concepts of Grid layout - Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
+[Basic concepts of Grid layout - Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)\
+[A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ## Author Links
 [LinkedIn](https://www.linkedin.com/in/sripriya-bhikshesvaran-8520992/)\
